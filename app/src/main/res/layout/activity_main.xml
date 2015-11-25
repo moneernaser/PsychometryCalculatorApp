@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".activities.MainActivity"
+    android:background="@drawable/calculator_background_1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أدخل عدد الفصول والإجابات الصحيحة"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView5">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/quantitativeAns"
+                android:width="120dip"
+                android:gravity="center"/>
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/quantitativeSec"
+                android:width="120dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="كمي"
+                android:id="@+id/textView2"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/verbalAns"
+                android:baselineAligned="false" />
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/verbalSec"
+                android:baselineAligned="false"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="كلامي"
+                android:id="@+id/textView4"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/engAns"
+                android:baselineAligned="false" />
+
+            <NumberPicker
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/engSec"
+                android:baselineAligned="false" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="انجليزي"
+                android:id="@+id/textView3"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="احسب"
+        android:id="@+id/calculateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnClicked()"
+        android:nestedScrollingEnabled="false" />
+
+</RelativeLayout>

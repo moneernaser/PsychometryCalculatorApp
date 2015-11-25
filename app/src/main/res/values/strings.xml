@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">حاسبة بسيخومتري</string>
+    <string name="results_title">النتائج</string>
+    <string name="action_settings">Settings</string>
+    <string name="errorTitle">خطأ في الإدخال</string>
+    <string name="invalidNumOfUnits">عدد الفصول يجب أن يكون  6 أو 8</string>
+
+    <string name="encourage_200">استمر! حتمًا تستطيع أكثر</string>
+    <string name="encourage_300">إذا كنت تستطيع تخيل صورة ما، يمكنك أن تجعلها واقعا</string>
+    <string name="encourage_400">الشخص الوحيد الذي عليك أن تتحدّاه هو أنت</string>
+    <string name="encourage_500">كُلما زاد إرتفاع تحليقك، زاد المنظر جمالا</string>
+    <string name="encourage_600">إن لم تثق بنفسك، فمن الذي سيثق بك؟</string>
+    <string name="encourage_700">هنالك دائمًا مكان على القمّة!</string>
+    <string name="encourage_800">أحسنت!</string>
+
+</resources>
